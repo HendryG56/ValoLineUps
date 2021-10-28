@@ -1,0 +1,68 @@
+package hendryg56.com.valolineups;
+
+import android.content.Context;
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+
+public class MapAdapter extends RecyclerView.Adapter<MapAdapter.MapViewHolder> {
+
+    Context cntx;
+    private ArrayList<Map> maps;
+    private String heroname;
+    private String mapname;
+
+    public MapAdapter(Context cntx) {
+        this.cntx = cntx;
+    }
+
+    public void setMaps(ArrayList<Map> maps) {
+        this.maps = maps;
+    }
+
+    public void setHeroname(String heroname) {
+        this.heroname = heroname;
+    }
+
+    @NonNull
+    @Override
+    public MapAdapter.MapViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(cntx).inflate(R.layout.map_recycle_view, parent, false);
+        return new MapViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull MapAdapter.MapViewHolder holder, int position) {
+        holder.mapname.setText(maps.get(position).getMapname());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    mapname = maps.get(position).getMapname();
+                    Intent intent = new Intent(cntx, StrategyActivity.class);
+                    intent.putExtra("Hero_HMap_Name", heroname);
+                    intent.putExtra("HMap_Name", mapname);
+                    cntx.startActivity(intent);
+            }
+        });
+    }
+
+    @Override
+    public int getItemCount() {
+        return maps.size();
+    }
+
+    public class MapViewHolder extends RecyclerView.ViewHolder{
+        TextView mapname;
+        public MapViewHolder(@NonNull View itemView) {
+            super(itemView);
+            mapname = itemView.findViewById(R.id.mapname);
+        }
+    }
+}
