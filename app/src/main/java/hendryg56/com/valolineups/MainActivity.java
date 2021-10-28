@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Hero> heroes = new ArrayList<>();
     private AdView mAdView;
 
+//    coba
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
