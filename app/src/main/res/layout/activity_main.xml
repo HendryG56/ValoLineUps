@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/valoblue">
 
 
     <TextView
@@ -13,11 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:paddingLeft="30dp"
-        android:paddingTop="15dp"
+        android:padding="10dp"
+        android:textAlignment="center"
         android:text="Hero"
-        android:textColor="@color/black"
-        android:textSize="35sp" />
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:background="@color/valored"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/hero_rv_view"

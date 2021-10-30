@@ -6,6 +6,7 @@ import android.content.IntentFilter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -36,8 +37,8 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.HeroViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull HeroAdapter.HeroViewHolder holder, int position) {
+        holder.heroimage.setImageResource(heroes.get(position).getImgSource());
         holder.heroname.setText(heroes.get(position).getHeroname());
-        holder.herotype.setText(heroes.get(position).getHerotype());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,12 +56,12 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.HeroViewHolder
     }
 
     public class HeroViewHolder extends RecyclerView.ViewHolder{
+        ImageView heroimage;
         TextView heroname;
-        TextView herotype;
         public HeroViewHolder(@NonNull View itemView) {
             super(itemView);
-            heroname = itemView.findViewById(R.id.heroname);
-            herotype = itemView.findViewById(R.id.hero_type);
+            heroimage = itemView.findViewById(R.id.hero_image);
+            heroname = itemView.findViewById(R.id.hero_name);
         }
     }
 }

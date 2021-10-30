@@ -2,11 +2,11 @@ package hendryg56.com.valolineups;
 
 public class Hero {
     private String heroname;
-    private String herotype;
+    private int imgSource;
 
-    public Hero(String heroname, String herotype) {
+    public Hero(String heroname, int imgSource) {
         this.heroname = heroname;
-        this.herotype = herotype;
+        this.imgSource = imgSource;
     }
 
     public String getHeroname() {
@@ -17,12 +17,12 @@ public class Hero {
         this.heroname = heroname;
     }
 
-    public String getHerotype() {
-        return herotype;
+    public int getImgSource() {
+        return imgSource;
     }
 
-    public void setHerotype(String herotype) {
-        this.herotype = herotype;
+    public void setImgSource(int imgSource) {
+        this.imgSource = imgSource;
     }
 }
 

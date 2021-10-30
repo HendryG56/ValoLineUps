@@ -1,6 +1,7 @@
 package hendryg56.com.valolineups;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -30,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Hero sova = new Hero("Sova", "Iniator");
+        Hero sova = new Hero("Sova", R.drawable.sova);
         heroes.add(sova);
-        Hero brimstone = new Hero("Brimstone", "Controller");
+        Hero brimstone = new Hero("Brimstone", R.drawable.brimstone);
         heroes.add(brimstone);
-        Hero killjoy = new Hero("KillJoy", "Sentinels");
+        Hero killjoy = new Hero("KillJoy", R.drawable.killjoy);
         heroes.add(killjoy);
 
         Hero_View = findViewById(R.id.hero_rv_view);
@@ -43,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
         heroAdapter.setHeroes(heroes);
 
         Hero_View.setAdapter(heroAdapter);
-        Hero_View.setLayoutManager(new LinearLayoutManager(this));
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL,false);
+        Hero_View.setLayoutManager(gridLayoutManager);
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
