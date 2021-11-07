@@ -35,7 +35,7 @@ public class PlayVideoActivity extends YouTubeBaseActivity {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 if(lineups_name.equals("Sova A Main")){
-                    youTubePlayer.loadVideo("HzeK7g8cD0Y");
+                    youTubePlayer.loadVideo("k8l4oOo38uY");
                     youTubePlayer.play();
                 }
             }
