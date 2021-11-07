@@ -9,11 +9,12 @@ import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class PlayVideoActivity extends AppCompatActivity {
+public class PlayVideoActivity extends YouTubeBaseActivity {
 
     YouTubePlayerView ytvideo;
     String lineups_name;
