@@ -5,28 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SiteActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/valoblue">
 
-    <Button
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/headerhero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/valored"
+            android:fontFamily="sans-serif-black"
+            android:padding="10dp"
+            android:text="Site"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/home_icon"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="350dp"
+            tools:layout_editor_absoluteY="7dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
         android:id="@+id/btn_asite"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A Site"
-        android:layout_margin="20dp"
-        android:textColor="@color/white"
-        android:background="@color/black"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="#000000"
         android:onClick="A_Site"
-        />
+        android:src="@drawable/a_site" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_bsite"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="B Site"
-        android:layout_margin="20dp"
-        android:textColor="@color/white"
-        android:background="@color/black"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="#000000"
         android:onClick="B_Site"
-        />
+        android:src="@drawable/b_site" />
 
 </LinearLayout>

@@ -1,11 +1,14 @@
 package hendryg56.com.valolineups;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class SiteActivity extends AppCompatActivity {
@@ -13,11 +16,20 @@ public class SiteActivity extends AppCompatActivity {
     String site_hero_name;
     String site_map_name;
     String site_strategy_name;
+    ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_site);
+
+        imageButton = findViewById(R.id.imgBtnHome);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imgBtn();
+            }
+        });
 
         Intent intent = getIntent();
         site_hero_name = intent.getStringExtra("Hero_Name_Go");
@@ -44,4 +56,11 @@ public class SiteActivity extends AppCompatActivity {
         intent.putExtra("Site_Go_LineUps", "B Site");
         startActivity(intent);
     }
+
+    public void imgBtn() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 }
