@@ -6,18 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class StrategyActivity extends AppCompatActivity {
 
     String strategy_hero_name;
     String strategy_map_name;
+    ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_strategy);
 
+        imageButton = findViewById(R.id.imgBtnHome);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { imgBtn(); }
+        });
 
         Intent intent = getIntent();
         strategy_hero_name = intent.getStringExtra("Hero_HMap_Name");
@@ -40,12 +47,12 @@ public class StrategyActivity extends AppCompatActivity {
         intent.putExtra("Map_Name_Go", strategy_map_name);
         intent.putExtra("Strategy_Go", "Defending");
         startActivity(intent);
+
+    }
+    public void imgBtn() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        Intent intent = new Intent(this, MapActivity.class);
-//        intent.putExtra("Hero_Name_Back", strategy_hero_name);
-//        finish();
-//    }
 }
