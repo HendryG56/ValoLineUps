@@ -47,7 +47,7 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_margin="50dp"
-        android:background="#ff"
+        android:background="#1D2839"
         android:onClick="attacking"
         android:src="@drawable/attack" />
 
@@ -57,12 +57,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="50dp"
-        android:background="#ff"
+        android:background="#1D2839"
         android:onClick="defending"
         android:src="@drawable/deff" />
-
-
-
-
 
 </LinearLayout>
