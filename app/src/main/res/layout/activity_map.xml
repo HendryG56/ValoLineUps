@@ -1,27 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".SiteActivity"
     android:orientation="vertical"
-    tools:context=".MapActivity">
-
+    android:background="@color/valoblue">
 
     <TextView
         android:id="@+id/headermap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/valored"
         android:fontFamily="sans-serif-black"
         android:padding="10dp"
-        android:textAlignment="center"
         android:text="Map"
-        android:textColor="@color/black"
-        android:textSize="35sp" />
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/map_rv_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/btn_ascent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/headermap"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#000000"
+        android:src="@drawable/ascent" />
+    <TextView
+        android:id="@+id/text_ascent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ascent"
+        android:layout_below="@id/btn_ascent"
+        android:textColor="@color/valored"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/btn_bind"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@id/headermap"
+        android:layout_toRightOf="@id/btn_ascent"
+        android:background="#000000"
+        android:onClick="B_Site"
+        android:src="@drawable/bind" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bind"
+        android:layout_below="@id/btn_bind"
+        android:layout_toRightOf="@id/text_ascent"
+        android:textColor="@color/valored"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/btn_split"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/btn_ascent"
+        android:background="#000000"
+        android:onClick="B_Site"
+        android:src="@drawable/split" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Split"
+        android:layout_below="@id/btn_split"
+        android:textColor="@color/valored"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
