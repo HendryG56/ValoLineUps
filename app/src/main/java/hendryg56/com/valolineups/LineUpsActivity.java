@@ -6,11 +6,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class LineUpsActivity extends AppCompatActivity {
+public class LineUpsActivity extends AppCompatActivity implements View.OnClickListener {
 
     RecyclerView lineups_view;
     String lineups_hero_name;
@@ -19,10 +21,15 @@ public class LineUpsActivity extends AppCompatActivity {
     String lineups_site_name;
     ArrayList<LineUps> lineUps = new ArrayList<>();
 
+    ImageButton home_button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_line_ups);
+
+        home_button = findViewById(R.id.home_button);
+        home_button.setOnClickListener(this);
 
         Intent intent = getIntent();
         lineups_hero_name = intent.getStringExtra("Hero_Name_Go_LineUps");
@@ -56,5 +63,14 @@ public class LineUpsActivity extends AppCompatActivity {
 
         lineups_view.setAdapter(lineUpsAdapter);
         lineups_view.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.home_button) {
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // Clear stack sebelum MainActivity
+            startActivity(intent);
+        }
     }
 }
