@@ -2,12 +2,15 @@ package hendryg56.com.valolineups;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -40,15 +43,18 @@ public class MapAdapter extends RecyclerView.Adapter<MapAdapter.MapViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MapAdapter.MapViewHolder holder, int position) {
-        holder.mapname.setText(maps.get(position).getMapname());
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+
+        holder.mapname.setText(maps.get(position).getMapName());
+        holder.mapimage.setImageResource(maps.get(position).getMapImage());
+        holder.mapcard.setBackgroundColor(Color.TRANSPARENT);
+        holder.mapcard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    mapname = maps.get(position).getMapname();
-                    Intent intent = new Intent(cntx, StrategyActivity.class);
-                    intent.putExtra("Hero_HMap_Name", heroname);
-                    intent.putExtra("HMap_Name", mapname);
-                    cntx.startActivity(intent);
+                mapname = maps.get(position).getMapName();
+                Intent intent = new Intent(cntx, StrategyActivity.class);
+                intent.putExtra("Hero_HMap_Name", heroname);
+                intent.putExtra("HMap_Name", mapname);
+                cntx.startActivity(intent);
             }
         });
     }
@@ -59,10 +65,15 @@ public class MapAdapter extends RecyclerView.Adapter<MapAdapter.MapViewHolder> {
     }
 
     public class MapViewHolder extends RecyclerView.ViewHolder{
+        ImageView mapimage;
         TextView mapname;
+        CardView mapcard;
+
         public MapViewHolder(@NonNull View itemView) {
             super(itemView);
+            mapimage = itemView.findViewById(R.id.mapimage);
             mapname = itemView.findViewById(R.id.mapname);
+            mapcard = itemView.findViewById(R.id.mapcard);
         }
     }
 }

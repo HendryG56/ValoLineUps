@@ -1,23 +1,18 @@
 package hendryg56.com.valolineups;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MapActivity extends AppCompatActivity {
 
-    ImageView btnAscent;
-    ImageView btnBind;
-    ImageView btnSplit;
-    Intent pindah;
     RecyclerView Map_View;
     String hero_name;
     ArrayList<Map> maps = new ArrayList<>();
@@ -27,46 +22,13 @@ public class MapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
-        btnAscent = (ImageView)findViewById(R.id.btn_ascent);
+        Map_View = findViewById(R.id.map_rv_view);
 
-        btnAscent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                pindah = new Intent(MapActivity.this, TypeActivity.class);
-                startActivity(pindah);
-                finish();
-            }
-        });
-
-        btnBind = (ImageView)findViewById(R.id.btn_bind);
-
-        btnBind.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                pindah = new Intent(MapActivity.this, TypeActivity.class);
-                startActivity(pindah);
-                finish();
-            }
-        });
-
-        btnSplit = (ImageView)findViewById(R.id.btn_split);
-
-        btnSplit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                pindah = new Intent(MapActivity.this, TypeActivity.class);
-                startActivity(pindah);
-                finish();
-            }
-        });
-
-
-
-        Map ascent = new Map("Ascent");
+        Map ascent = new Map("Ascent", R.drawable.ascent);
         maps.add(ascent);
-        Map bind = new Map("Bind");
+        Map bind = new Map("Bind", R.drawable.bind);
         maps.add(bind);
-        Map icebox = new Map("Icebox");
+        Map icebox = new Map("Split", R.drawable.split);
         maps.add(icebox);
 
         Intent intent = getIntent();
@@ -77,7 +39,7 @@ public class MapActivity extends AppCompatActivity {
         mapAdapter.setMaps(maps);
 
         Map_View.setAdapter(mapAdapter);
-        Map_View.setLayoutManager(new LinearLayoutManager(this));
+        Map_View.setLayoutManager(new GridLayoutManager(this, 2, RecyclerView.VERTICAL, false));
 
         Toast.makeText(this, hero_name, Toast.LENGTH_SHORT).show();
     }

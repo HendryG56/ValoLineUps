@@ -4,26 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
+    android:background="@color/valoblue"
     android:outlineSpotShadowColor="@color/black"
-    app:cardBackgroundColor="@color/black"
-    app:cardCornerRadius="10dp">
+    app:cardCornerRadius="10dp"
+    android:id="@+id/mapcard">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mapimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/valoblue"
+            android:src="@drawable/ascent" />
 
         <TextView
             android:id="@+id/mapname"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:text="Bind"
-            android:gravity="center"
-            android:padding="10dp"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:layout_centerHorizontal="true"
+            android:text="Ascent"
+            android:layout_below="@id/mapimage"
+            android:textColor="@color/valored"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
