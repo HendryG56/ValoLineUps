@@ -18,7 +18,6 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
-            android:background="@color/valoblue"
             android:src="@drawable/ascent" />
 
         <TextView
@@ -26,14 +25,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:layout_centerHorizontal="true"
             android:text="Ascent"
             android:layout_below="@id/mapimage"
             android:textColor="@color/valored"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="75dp"
-            android:layout_marginTop="10dp"/>
+            android:textStyle="bold"/>
 
     </RelativeLayout>
 
