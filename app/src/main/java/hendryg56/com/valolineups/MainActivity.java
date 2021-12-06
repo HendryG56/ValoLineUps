@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         heroes.add(sova);
         Hero brimstone = new Hero("Brimstone", R.drawable.brimstone);
         heroes.add(brimstone);
-        Hero killjoy = new Hero("KillJoy", R.drawable.killjoy);
+        Hero killjoy = new Hero("Killjoy", R.drawable.killjoy);
         heroes.add(killjoy);
 
         Hero_View = findViewById(R.id.hero_rv_view);

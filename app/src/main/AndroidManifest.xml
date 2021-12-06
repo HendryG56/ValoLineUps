@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ValoLineUps">
-        <activity android:name=".PlayVideoActivity"></activity>
+        <activity android:name=".PlayVideoActivity" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
         <activity android:name=".LineUpsActivity" />
         <activity android:name=".SiteActivity" />
         <activity android:name=".StrategyActivity" />
