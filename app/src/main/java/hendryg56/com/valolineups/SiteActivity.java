@@ -36,7 +36,7 @@ public class SiteActivity extends AppCompatActivity {
         site_map_name = intent.getStringExtra("Map_Name_Go");
         site_strategy_name = intent.getStringExtra("Strategy_Go");
 
-        Toast.makeText(this, site_hero_name + " " + site_map_name + " " + site_strategy_name, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, site_hero_name + " " + site_map_name + " " + site_strategy_name, Toast.LENGTH_SHORT).show();
     }
 
     public void A_Site(View view) {

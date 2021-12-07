@@ -37,7 +37,7 @@ public class LineUpsActivity extends AppCompatActivity implements View.OnClickLi
         lineups_strategy_name = intent.getStringExtra("Strategy_Go_LineUps");
         lineups_site_name = intent.getStringExtra("Site_Go_LineUps");
 
-        Toast.makeText(this, lineups_hero_name + " " + lineups_map_name + " " + lineups_strategy_name + " " + lineups_site_name, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, lineups_hero_name + " " + lineups_map_name + " " + lineups_strategy_name + " " + lineups_site_name, Toast.LENGTH_SHORT).show();
 
         if((lineups_hero_name.equals("Sova")) && (lineups_map_name.equals("Ascent")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("A Site"))){
             LineUps lineUps_sova_1 = new LineUps("Heaven Garden S");

@@ -41,6 +41,6 @@ public class MapActivity extends AppCompatActivity {
         Map_View.setAdapter(mapAdapter);
         Map_View.setLayoutManager(new GridLayoutManager(this, 2, RecyclerView.VERTICAL, false));
 
-        Toast.makeText(this, hero_name, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, hero_name, Toast.LENGTH_SHORT).show();
     }
 }

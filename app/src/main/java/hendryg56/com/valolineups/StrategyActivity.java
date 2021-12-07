@@ -31,7 +31,7 @@ public class StrategyActivity extends AppCompatActivity {
         strategy_hero_name = intent.getStringExtra("Hero_HMap_Name");
         strategy_map_name = intent.getStringExtra("HMap_Name");
 
-        Toast.makeText(this, strategy_hero_name + " " + strategy_map_name, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, strategy_hero_name + " " + strategy_map_name, Toast.LENGTH_SHORT).show();
     }
 
     public void attacking(View view) {
