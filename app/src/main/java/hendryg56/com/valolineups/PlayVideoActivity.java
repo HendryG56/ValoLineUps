@@ -178,6 +178,186 @@ public class PlayVideoActivity extends YouTubeBaseActivity {
                 else if(lineups_name.equals("Triple Box BK")){
                     youTubePlayer.loadVideo("BnpJKloQ-ts");
                 }
+                else if(lineups_name.equals("Tank Plant K")){
+                    youTubePlayer.loadVideo("McO7_7eXao8");
+                }
+                else if(lineups_name.equals("Triple Box BAK")){
+                    youTubePlayer.loadVideo("UsneYLA-qA4");
+                }
+                else if(lineups_name.equals("U Hall K")){
+                    youTubePlayer.loadVideo("wt9b32BmRWs");
+                }
+                else if(lineups_name.equals("Back Site BBK")){
+                    youTubePlayer.loadVideo("oh0MIq0hrsY");
+                }
+                else if(lineups_name.equals("Box Plant BBK")){
+                    youTubePlayer.loadVideo("exhWYOTKBa8");
+                }
+                else if(lineups_name.equals("Hallway Control K")){
+                    youTubePlayer.loadVideo("30Q_FJQyCSU");
+                }
+                else if(lineups_name.equals("Short Corner BAK")){
+                    youTubePlayer.loadVideo("4NHVlPub_Ns");
+                }
+                else if(lineups_name.equals("Site Corner BAK")){
+                    youTubePlayer.loadVideo("8ejYQfV9Pnk");
+                }
+                else if(lineups_name.equals("Triple Box BAKD")){
+                    youTubePlayer.loadVideo("QB7iNCR7w5Y");
+                }
+                else if(lineups_name.equals("Link Rush K")){
+                    youTubePlayer.loadVideo("8NRj9ltUgMc");
+                }
+                else if(lineups_name.equals("Long Corner K")){
+                    youTubePlayer.loadVideo("1Woo0c5QTIU");
+                }
+                else if(lineups_name.equals("Plant Stopper K")){
+                    youTubePlayer.loadVideo("KATyYgpd42M");
+                }
+                else if(lineups_name.equals("Safe Site SK")){
+                    youTubePlayer.loadVideo("8hPuDoVmuAE");
+                }
+                else if(lineups_name.equals("Site Corner SK")){
+                    youTubePlayer.loadVideo("jBvI2eFcQLo");
+                }
+                else if(lineups_name.equals("TV POST SK")){
+                    youTubePlayer.loadVideo("IhnHmcXmd9Y");
+                }
+                else if(lineups_name.equals("Heaven to Site K")){
+                    youTubePlayer.loadVideo("3oAjrICbHsk");
+                }
+                else if(lineups_name.equals("Main to Site K")){
+                    youTubePlayer.loadVideo("poyVyMNfDbo");
+                }
+                else if(lineups_name.equals("Site New Plant K")) {
+                    youTubePlayer.loadVideo("epNsUT1n3Jc");
+                }
+                else if(lineups_name.equals("Heaven Corner Left K")){
+                    youTubePlayer.loadVideo("K47ng15Ca_k");
+                }
+                else if(lineups_name.equals("Heaven Corner Right K")){
+                    youTubePlayer.loadVideo("OvLuRzBiMtA");
+                }
+                else if(lineups_name.equals("Heaven To TV K")){
+                    youTubePlayer.loadVideo("WBWya-E9eao");
+                }
+                else if(lineups_name.equals("Alley to Site K")){
+                    youTubePlayer.loadVideo("nAMibpottjQ");
+                }
+                else if(lineups_name.equals("Main Stopper K")){
+                    youTubePlayer.loadVideo("i_zxh0PrV_Y");
+                }
+                else if(lineups_name.equals("Under H to S K")) {
+                    youTubePlayer.loadVideo("iQjvgcDgrpE");
+                }
+                else if(lineups_name.equals("Catwalk FGen BR")){
+                    youTubePlayer.loadVideo("byZFordUp24");
+                }
+                else if(lineups_name.equals("Double Boxes BR")){
+                    youTubePlayer.loadVideo("cEZx09TzHHs");
+                }
+                else if(lineups_name.equals("Front Generator BR")){
+                    youTubePlayer.loadVideo("YiRMQU9wB9s");
+                }
+                else if(lineups_name.equals("Tall Box BR")){
+                    youTubePlayer.loadVideo("mvtpMvP1gZg");
+                }
+                else if(lineups_name.equals("Triple Box BR")){
+                    youTubePlayer.loadVideo("Gus-_b6BtuM");
+                }
+                else if(lineups_name.equals("Triple Box Main BR")) {
+                    youTubePlayer.loadVideo("5OmZr1Blo44");
+                }
+                else if(lineups_name.equals("Back Gen BR")){
+                    youTubePlayer.loadVideo("Yge5VMDCpz0");
+                }
+                else if(lineups_name.equals("Double Box BRD")){
+                    youTubePlayer.loadVideo("NMYiAh6TgtM");
+                }
+                else if(lineups_name.equals("Front Generator BRD")){
+                    youTubePlayer.loadVideo("-unC6xk8JvM");
+                }
+                else if(lineups_name.equals("Back Site BRD")){
+                    youTubePlayer.loadVideo("4_CriCyfPHg");
+                }
+                else if(lineups_name.equals("Corner BRD")){
+                    youTubePlayer.loadVideo("48lXvHc6K7Y");
+                }
+                else if(lineups_name.equals("Triple Box BRD")) {
+                    youTubePlayer.loadVideo("mcC7zjk4w7Y");
+                }
+                else if(lineups_name.equals("Generator Short BR")){
+                    youTubePlayer.loadVideo("WwFmzbIYRbE");
+                }
+                else if(lineups_name.equals("Triple Box Short BR")){
+                    youTubePlayer.loadVideo("dY9cJGQmTqo");
+                }
+                else if(lineups_name.equals("Triple Box BRB")){
+                    youTubePlayer.loadVideo("n6wN7isT8VM");
+                }
+                else if(lineups_name.equals("Box Long BR")){
+                    youTubePlayer.loadVideo("09FfIzQXGDE");
+                }
+                else if(lineups_name.equals("Box Short BR")){
+                    youTubePlayer.loadVideo("tC8q9S7MAIw");
+                }
+                else if(lineups_name.equals("Box Teleport BR")) {
+                    youTubePlayer.loadVideo("6P50NZpIqxE");
+                }
+                else if(lineups_name.equals("Plant Stopper BR")){
+                    youTubePlayer.loadVideo("G0ua3cIO3GU");
+                }
+                else if(lineups_name.equals("Short Corner BR")){
+                    youTubePlayer.loadVideo("6r5n6K2Jw0c");
+                }
+                else if(lineups_name.equals("Triple Box BBRD")){
+                    youTubePlayer.loadVideo("IOiMDIylw2A");
+                }
+                else if(lineups_name.equals("Link BR")){
+                    youTubePlayer.loadVideo("laP-KxxTlDI");
+                }
+                else if(lineups_name.equals("Long Stop BR")){
+                    youTubePlayer.loadVideo("husv_nbZ7fo");
+                }
+                else if(lineups_name.equals("Short Stop BR")) {
+                    youTubePlayer.loadVideo("-ylEMWEb3t4");
+                }
+                else if(lineups_name.equals("Heaven ABR")){
+                    youTubePlayer.loadVideo("q4MavHgrpPE");
+                }
+                else if(lineups_name.equals("Site Planted BR")){
+                    youTubePlayer.loadVideo("iyc_dE0tClo");
+                }
+                else if(lineups_name.equals("Stair BR")){
+                    youTubePlayer.loadVideo("sEePD4J3T4Y");
+                }
+                else if(lineups_name.equals("Alley BR")){
+                    youTubePlayer.loadVideo("s4tFhgiUPX4");
+                }
+                else if(lineups_name.equals("Back Site BR")){
+                    youTubePlayer.loadVideo("7t8sBpvpQ6k");
+                }
+                else if(lineups_name.equals("Heaven BBR")) {
+                    youTubePlayer.loadVideo("GdSUHIC4sEE");
+                }
+                else if(lineups_name.equals("Lobby Corner BR")){
+                    youTubePlayer.loadVideo("Yyhnjsly090");
+                }
+                else if(lineups_name.equals("Main Stair BR")){
+                    youTubePlayer.loadVideo("Cr2k8yD66HA");
+                }
+                else if(lineups_name.equals("TV Post BR")){
+                    youTubePlayer.loadVideo("_WXfHhHmqfs");
+                }
+                else if(lineups_name.equals("Back Site BRS")){
+                    youTubePlayer.loadVideo("0EOzTyEqKL0");
+                }
+                else if(lineups_name.equals("Main Plant BR")){
+                    youTubePlayer.loadVideo("Z7Jgb4gPcpA");
+                }
+                else if(lineups_name.equals("Under Heaven BR")) {
+                    youTubePlayer.loadVideo("CHEimFN869c");
+                }
                 youTubePlayer.setFullscreen(true);
                 youTubePlayer.play();
             }

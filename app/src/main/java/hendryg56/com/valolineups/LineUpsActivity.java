@@ -135,7 +135,7 @@ public class LineUpsActivity extends AppCompatActivity implements View.OnClickLi
             LineUps lineUps_sova_3 = new LineUps("Main Site SBS");
             lineUps.add(lineUps_sova_3);
         }
-        if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Ascent")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("A Site"))){
+        else if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Ascent")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("A Site"))){
             LineUps lineUps_sova_1 = new LineUps("Back Generator K");
             lineUps.add(lineUps_sova_1);
             LineUps lineUps_sova_2 = new LineUps("Double Boxes K");
@@ -168,67 +168,163 @@ public class LineUpsActivity extends AppCompatActivity implements View.OnClickLi
             lineUps.add(lineUps_sova_3);
         }
         else if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Bind")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("A Site"))){
-            LineUps lineUps_sova_1 = new LineUps("Front Site");
+            LineUps lineUps_sova_1 = new LineUps("Tank Plant K");
             lineUps.add(lineUps_sova_1);
-            LineUps lineUps_sova_2 = new LineUps("Operator Peek");
+            LineUps lineUps_sova_2 = new LineUps("Triple Box BAK");
             lineUps.add(lineUps_sova_2);
-            LineUps lineUps_sova_3 = new LineUps("Shower Control");
+            LineUps lineUps_sova_3 = new LineUps("U Hall K");
             lineUps.add(lineUps_sova_3);
         }
         else if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Bind")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("B Site"))){
-            LineUps lineUps_sova_1 = new LineUps("Hookah Info");
+            LineUps lineUps_sova_1 = new LineUps("Back Site BBK");
             lineUps.add(lineUps_sova_1);
-            LineUps lineUps_sova_2 = new LineUps("Long Control BA");
+            LineUps lineUps_sova_2 = new LineUps("Box Plant BBK");
             lineUps.add(lineUps_sova_2);
-            LineUps lineUps_sova_3 = new LineUps("Main Teleport");
+            LineUps lineUps_sova_3 = new LineUps("Hallway Control K");
             lineUps.add(lineUps_sova_3);
         }
         else if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Bind")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("A Site"))){
-            LineUps lineUps_sova_1 = new LineUps("Long Shower");
+            LineUps lineUps_sova_1 = new LineUps("Short Corner BAK");
             lineUps.add(lineUps_sova_1);
-            LineUps lineUps_sova_2 = new LineUps("Short Control BA");
+            LineUps lineUps_sova_2 = new LineUps("Site Corner BAK");
             lineUps.add(lineUps_sova_2);
-            LineUps lineUps_sova_3 = new LineUps("Site Rush");
+            LineUps lineUps_sova_3 = new LineUps("Triple Box BAKD");
             lineUps.add(lineUps_sova_3);
         }
         else if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Bind")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("B Site"))){
-            LineUps lineUps_sova_1 = new LineUps("Lobby Short");
+            LineUps lineUps_sova_1 = new LineUps("Link Rush K");
             lineUps.add(lineUps_sova_1);
-            LineUps lineUps_sova_2 = new LineUps("Long Control BB");
+            LineUps lineUps_sova_2 = new LineUps("Long Corner K");
             lineUps.add(lineUps_sova_2);
-            LineUps lineUps_sova_3 = new LineUps("Short Control BB");
+            LineUps lineUps_sova_3 = new LineUps("Plant Stopper K");
             lineUps.add(lineUps_sova_3);
         }
         else if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Split")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("A Site"))){
-            LineUps lineUps_sova_1 = new LineUps("Main Scan");
+            LineUps lineUps_sova_1 = new LineUps("Safe Site SK");
             lineUps.add(lineUps_sova_1);
-            LineUps lineUps_sova_2 = new LineUps("Site Scan SA");
+            LineUps lineUps_sova_2 = new LineUps("Site Corner SK");
             lineUps.add(lineUps_sova_2);
-            LineUps lineUps_sova_3 = new LineUps("Stair");
+            LineUps lineUps_sova_3 = new LineUps("TV POST SK");
             lineUps.add(lineUps_sova_3);
         }
         else if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Split")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("B Site"))){
-            LineUps lineUps_sova_1 = new LineUps("Heaven Scan");
+            LineUps lineUps_sova_1 = new LineUps("Heaven to Site K");
             lineUps.add(lineUps_sova_1);
-            LineUps lineUps_sova_2 = new LineUps("Heaven Walk");
+            LineUps lineUps_sova_2 = new LineUps("Main to Site K");
             lineUps.add(lineUps_sova_2);
-            LineUps lineUps_sova_3 = new LineUps("Site Scan SB");
+            LineUps lineUps_sova_3 = new LineUps("Site New Plant K");
             lineUps.add(lineUps_sova_3);
         }
         else if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Split")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("A Site"))){
-            LineUps lineUps_sova_1 = new LineUps("Main Site SA");
+            LineUps lineUps_sova_1 = new LineUps("Heaven Corner Left K");
             lineUps.add(lineUps_sova_1);
-            LineUps lineUps_sova_2 = new LineUps("Short Board");
+            LineUps lineUps_sova_2 = new LineUps("Heaven Corner Right K");
             lineUps.add(lineUps_sova_2);
-            LineUps lineUps_sova_3 = new LineUps("Short Pole");
+            LineUps lineUps_sova_3 = new LineUps("Heaven To TV K");
             lineUps.add(lineUps_sova_3);
         }
         else if((lineups_hero_name.equals("Killjoy")) && (lineups_map_name.equals("Split")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("B Site"))){
-            LineUps lineUps_sova_1 = new LineUps("Lobby Link");
+            LineUps lineUps_sova_1 = new LineUps("Alley to Site K");
             lineUps.add(lineUps_sova_1);
-            LineUps lineUps_sova_2 = new LineUps("Lobby SB");
+            LineUps lineUps_sova_2 = new LineUps("Main Stopper K");
             lineUps.add(lineUps_sova_2);
-            LineUps lineUps_sova_3 = new LineUps("Main Site SB");
+            LineUps lineUps_sova_3 = new LineUps("Under H to S K");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Ascent")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("A Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Catwalk FGen BR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Double Boxes BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Front Generator BR");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Ascent")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("B Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Tall Box BR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Triple Box BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Triple Box Main BR");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Ascent")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("A Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Back Gen BR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Double Box BRD");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Front Generator BRD");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Ascent")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("B Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Back Site BRD");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Corner BRD");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Triple Box BRD");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Bind")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("A Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Generator Short BR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Triple Box Short BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Triple Box BRB");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Bind")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("B Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Box Long BR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Box Short BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Box Teleport BR");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Bind")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("A Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Plant Stopper BR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Short Corner BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Triple Box BBRD");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Bind")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("B Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Link BR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Long Stop BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Short Stop BR");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Split")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("A Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Heaven ABR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Site Planted BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Stair BR");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Split")) && (lineups_strategy_name.equals("Attacking")) && (lineups_site_name.equals("B Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Alley BR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Back Site BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Heaven BBR");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Split")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("A Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Lobby Corner BR");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Main Stair BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("TV Post BR");
+            lineUps.add(lineUps_sova_3);
+        }
+        else if((lineups_hero_name.equals("Brimstone")) && (lineups_map_name.equals("Split")) && (lineups_strategy_name.equals("Defending")) && (lineups_site_name.equals("B Site"))){
+            LineUps lineUps_sova_1 = new LineUps("Back Site BRS");
+            lineUps.add(lineUps_sova_1);
+            LineUps lineUps_sova_2 = new LineUps("Main Plant BR");
+            lineUps.add(lineUps_sova_2);
+            LineUps lineUps_sova_3 = new LineUps("Under Heaven BR");
             lineUps.add(lineUps_sova_3);
         }
 
